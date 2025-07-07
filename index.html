@@ -1,41 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <!-- Meta Pixel Code -->
-  <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1323420511872784');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1323420511872784&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '996208712601927');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=996208712601927&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1323420511872784');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1323420511872784&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Aula Gratuita - Prática Previdenciária</title>
@@ -111,45 +94,21 @@ src="https://www.facebook.com/tr?id=996208712601927&ev=PageView&noscript=1"
       color: #f0c059;
       font-size: 1.1rem;
     }
-    form {
-      max-width: 500px;
-      margin: 30px auto 0;
-      text-align: left;
-    }
-    label {
-      display: block;
-      margin-bottom: 8px;
-      font-weight: 600;
-      color: #f0c059;
-    }
-    input[type="email"] {
-      width: 100%;
-      padding: 14px;
-      border-radius: 8px;
-      border: 2px solid #333;
-      background: #101010;
-      color: #fff;
-      font-size: 1rem;
-      margin-bottom: 20px;
-    }
-    input[type="email"]:focus {
-      border-color: #f0c059;
-      outline: none;
-    }
-    button {
+    .cta-button {
       width: 100%;
       padding: 16px;
-      background-color: #d4af37;
-      color: #121212;
+      background-color: #28a745;
+      color: #fff;
       font-weight: 700;
       font-size: 1.05rem;
       border: none;
       border-radius: 10px;
       cursor: pointer;
       transition: background 0.3s ease;
+      margin-top: 30px;
     }
-    button:hover {
-      background-color: #b8942e;
+    .cta-button:hover {
+      background-color: #218838;
     }
     .footer {
       text-align: center;
@@ -165,41 +124,25 @@ src="https://www.facebook.com/tr?id=996208712601927&ev=PageView&noscript=1"
   </style>
 </head>
 <body>
-  
-<div class="container">
-  <div class="foto">
-    <img src="https://github.com/profpaulohenriquemaceio/aulagratuita/blob/main/bannerlp.png?raw=true" alt="Foto do Prof. Paulo Henrique" />
-  </div>
+  <div class="container">
+    <div class="foto">
+      <img src="https://github.com/profpaulohenriquemaceio/aulagratuita/blob/main/bannerlp.png?raw=true" alt="Foto do Prof. Paulo Henrique" />
+    </div>
     <h1>Aula AO VIVO e GRATUITA – Prática Previdenciária</h1>
     <p class="lead">
       No dia <strong>21/07 às 20h</strong>, participe da aula gratuita e veja na prática como transformar a sua carreira de advogado previdenciarista mesmo que você esteja no absoluto zero.
-    </p>    <ul>
+    </p>
+    <ul>
       <li>Aprenda os primeiros passos da Advocacia Previdenciária</li>
       <li>Domine estratégias que aumentam sua autoridade e sua renda como advogado</li>
       <li>Descubra porque o Direito Previdenciário é a área mais lucrativa de todas</li>
     </ul>
-    <form id="leadForm">
-      <label for="email">Seu melhor e-mail:</label>
-      <input type="email" id="email" name="email" placeholder="ex: nome@email.com" required />
-      <button type="submit">Quero participar da aula</button>
-    </form>
+    <button class="cta-button" onclick="window.location.href='https://chat.whatsapp.com/F3aAXCyGj0p53wP6HO8xPo'">
+      ENTRAR PARA O GRUPO EXCLUSIVO
+    </button>
   </div>
   <div class="footer">
     © 2025 – Prof. Paulo Henrique | Todos os direitos reservados
   </div>
-  <script>
-    document.getElementById('leadForm').addEventListener('submit', function (event) {
-      event.preventDefault();
-      const email = document.getElementById('email').value.trim();
-      if (!email) {
-        alert('Por favor, preencha seu e-mail.');
-        return;
-      }
-      console.log("E-mail capturado:", email);
-      setTimeout(() => {
-        window.location.href = 'https://chat.whatsapp.com/F3aAXCyGj0p53wP6HO8xPo';
-      }, 500);
-    });
-  </script>
 </body>
 </html>
